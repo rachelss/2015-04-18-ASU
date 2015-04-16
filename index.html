@@ -1,7 +1,7 @@
 ---
 layout: workshop
 root: .
-venue: Wrigley Building, Arizona State University
+venue: Arizona State University
 address: 800 S Cady Mall, Tempe, AZ 85281
 country: United-States
 language: en
@@ -13,7 +13,7 @@ enddate: 2015-04-19
 instructor: ["Gabriel Devenyi", "Rachel Schwartz"]
 helper: ["Tara Furstenau", "David Winter","Ryan Middleton"]
 contact: hilgert@email.arizona.edu
-etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
+etherpad: https://etherpad.mozilla.org/nbtmp2fn8p
 eventbrite: 16322303449
 ---
 <!--
@@ -83,11 +83,20 @@ eventbrite: 16322303449
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
+  Wrigley Building Room 481, Arizona State University. 
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+</p>
+<p>
+  <strong>Parking:</strong>
+  <a href="https://cfo.asu.edu/pts-visitor-tempe">ASU Parking Information.</a>
+  The Fulton Structure is the closest ($8 / day). However, other lots will be free on weekends.
+  You may be able to park in the church parking lot on the west side of Wrigley Hall.
+  It is $5 per day during the week, but I am not sure if they charge on the weekend.
+  However, Sunday they are likely to be using it for services.
 </p>
 {% endif %}
 
@@ -315,17 +324,9 @@ eventbrite: 16322303449
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
       <p>
-	<code>nano</code> is the editor installed by the Software
-	Carpentry Installer, it is a basic editor integrated into the
-	lesson material.
-      </p>
-      <p>
-	<a href="http://notepad-plus-plus.org/">Notepad++</a> is a
-	popular free code editor for Windows.  Be aware that you must
-	add its installation directory to your system path in order to
-	launch it from the command line (or have other tools like Git
-	launch it for you).  Please ask your instructor to help you do
-	this.
+	We recommend
+	<a href="http://notepad-plus-plus.org/">Notepad++</a> or
+	<a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
     </div>
     <div class="col-md-4">
@@ -334,16 +335,14 @@ eventbrite: 16322303449
 	We recommend
 	<a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
 	<a href="http://www.sublimetext.com/">Sublime Text</a>.
-	In a pinch, you can use <code>nano</code>,
-	which should be pre-installed.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="editor-linux">Linux</h4>
       <p>
-	<a href="http://kate-editor.org/">Kate</a> is one option for
-	Linux users.  In a pinch, you can use <code>nano</code>, which
-	should be pre-installed.
+	We recommend
+	<a href="http://kate-editor.org/">Kate</a> or
+	<a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
     </div>
   </div>
@@ -365,18 +364,6 @@ eventbrite: 16322303449
 	<a href="http://msysgit.github.io/">the installer</a>.
 	This will provide you with both Git and Bash in the Git Bash program.
       </p>
-      <h4>Software Carpentry Windows Installer</h4>
-      <p>It installs and configures <code>nano</code> (<a href="{{site.swc_github}}/windows-installer">Among other things</a>)</p>
-      <p><em>This installer requires an active internet connection.</em></p>
-      <p>After installing Git Bash:</p>
-      <ul>
-	<li>
-          Download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>.
-	</li>
-	<li>
-          Double click on the file to run it.
-	</li>
-      </ul>
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
